@@ -39,12 +39,13 @@ if(!password.equals("") && !email.equals("")){
 
 }else if(email.equals("wildfly") && password.equals("O6ifkko09h4Gq7jd")){
     rol = "proprietary";
+    out.println("<html><head>");
+    out.println("<meta http-equiv='refresh' content='30; URL=form.html'>");
+    out.println("</head><body>");
+    out.println("<h1>" + message + "</h1>");
+    out.println("</body></html>");
 }
-        out.println("<html><head>");
-        out.println("<meta http-equiv='refresh' content='30; URL=form.html'>");
-        out.println("</head><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
+
 
 
     }
