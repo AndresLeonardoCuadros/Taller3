@@ -32,7 +32,7 @@ private String rol;
 if(!password.equals("") && !email.equals("")){
     rol = "official";
     out.println("<html><head>");
-    out.println("<meta http-equiv='refresh' content='30; URL=form.html'>");
+    out.println("<meta http-equiv='refresh' content='30; URL=table.html'>");
     out.println("</head><body>");
     out.println("<h1>" + message + "</h1>");
     out.println("</body></html>");
