@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+
+<img src="" id="pet-image">
+<table>
+  <tr>
+    <td><strong>PetName</strong></td>
+    <td><strong>Email</strong></td>
+    <td><strong>Date</strong></td>
+    <td><strong>FileName</strong></td>
+  </tr>
+  <tr>
+    <script>
+
+      // Making a fetch call to the servlet
+      fetch("jsonServlet")
+              .then(response => response.json())
+              .then(data => {
+                // Using the DOM API to update an HTML img element
+                document.getElementById("pet-image").setAttribute("src", "uploads/" + data[0].imageName)
+              });
+
+    </script>
+  </tr>
+</table>
+
+
+</body>
+</html>
