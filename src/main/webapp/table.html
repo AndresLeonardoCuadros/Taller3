@@ -6,26 +6,19 @@
 </head>
 <body>
 
-<img src="" id="pet-image">
+
 <table>
   <tr>
+    <td><strong>Image</strong></td>
     <td><strong>PetName</strong></td>
     <td><strong>Email</strong></td>
     <td><strong>Date</strong></td>
     <td><strong>FileName</strong></td>
   </tr>
   <tr>
-    <script>
+    <td><img src="" id="pet-image"></td>
+    <td></td>
 
-      // Making a fetch call to the servlet
-      fetch("jsonServlet")
-              .then(response => response.json())
-              .then(data => {
-                // Using the DOM API to update an HTML img element
-                document.getElementById("pet-image").setAttribute("src", "uploads/" + data[0].imageName)
-              });
-
-    </script>
   </tr>
 </table>
 
